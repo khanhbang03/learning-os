@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://username.github.io/learning-os",
+  "homepage": "https://khanhbang03.github.io/learning-os",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
