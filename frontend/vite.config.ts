@@ -1,7 +1,20 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// vite.config.js
 export default defineConfig({
-  base: "/learning-os/"
+  base: '/learning-os/',
+  plugins: [react()],
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
+  },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+    },
+  },
 })
