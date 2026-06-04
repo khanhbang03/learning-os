@@ -1,0 +1,222 @@
+:root {
+  color-scheme: dark;
+  color: #e9edf1;
+  background: #071013;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #0f4b8f 0%, transparent 35%),
+    radial-gradient(circle at 20% 15%, #8b5cf6 0%, transparent 28%),
+    linear-gradient(180deg, #09121a 0%, #02060a 100%);
+}
+img {
+  max-width: 100%;
+}
+button,
+input {
+  font: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+.hero {
+  padding: 5rem 0 3rem;
+}
+.hero-copy {
+  max-width: 720px;
+}
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #7dd3fc;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+h1 {
+  font-size: clamp(2.5rem, 4vw, 4.2rem);
+  margin: 0;
+  line-height: 1.02;
+}
+p {
+  line-height: 1.8;
+  color: #cbd5e1;
+}
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+button,
+a.secondary-button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.95rem 1.75rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  background: linear-gradient(135deg, #38bdf8, #818cf8);
+  color: #020617;
+  font-weight: 700;
+}
+button:hover,
+a.secondary-button:hover {
+  transform: translateY(-2px);
+}
+a.secondary-button {
+  background: rgba(148, 163, 184, 0.14);
+  color: #e2e8f0;
+}
+.hero-visual {
+  margin-top: 3rem;
+}
+.dashboard-card {
+  padding: 2rem;
+  border-radius: 28px;
+  background: rgba(15, 23, 42, 0.86);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  box-shadow: 0 28px 80px rgba(15, 23, 42, 0.25);
+}
+.dashboard-card h2 {
+  margin: 0 0 0.5rem;
+}
+.score {
+  font-size: 3.5rem;
+  margin: 0 0 1.5rem;
+  color: #38bdf8;
+}
+.skill-bar {
+  display: grid;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+.skill-bar span {
+  font-size: 0.95rem;
+}
+.skill-bar .bar {
+  height: 0.9rem;
+  width: 100%;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.16);
+  overflow: hidden;
+}
+.skill-bar .bar div {
+  height: 100%;
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  border-radius: 999px;
+}
+.section {
+  padding: 4rem 0;
+}
+.features h2,
+.demo-section h2,
+.roadmap h2 {
+  margin-bottom: 1.5rem;
+}
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+.feature-card {
+  padding: 1.75rem;
+  border-radius: 24px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  min-height: 180px;
+}
+.feature-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+}
+.demo-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr;
+  gap: 1.5rem;
+}
+.demo-panel,
+.mock-dashboard .card,
+.roadmap-step {
+  border-radius: 24px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  padding: 1.75rem;
+}
+form {
+  display: grid;
+  gap: 1rem;
+}
+input[type="file"] {
+  border-radius: 14px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  padding: 0.95rem 1rem;
+  color: #e2e8f0;
+}
+.demo-panel button {
+  width: fit-content;
+}
+.demo-output {
+  margin-top: 1.75rem;
+}
+.output-block {
+  margin-bottom: 1.25rem;
+  padding: 1rem;
+  border-radius: 18px;
+  background: rgba(15, 23, 42, 0.8);
+}
+.output-block h4 {
+  margin: 0 0 0.6rem;
+}
+.mock-dashboard {
+  display: grid;
+  gap: 1rem;
+}
+.card h3 {
+  margin-top: 0;
+}
+.card ul {
+  padding-left: 1.1rem;
+}
+.hidden {
+  display: none;
+}
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.roadmap-step h4 {
+  margin: 0 0 0.5rem;
+  width: fit-content;
+  background: #38bdf8;
+  color: #020617;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+}
+.footer {
+  padding: 2rem 0;
+  border-top: 1px solid rgba(148, 163, 184, 0.1);
+}
+@media (max-width: 860px) {
+  .demo-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 700px) {
+  .hero-actions {
+    flex-direction: column;
+  }
+  .dashboard-card {
+    width: 100%;
+  }
+}

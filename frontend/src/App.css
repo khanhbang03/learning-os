@@ -1,0 +1,166 @@
+:root {
+  color-scheme: dark;
+  color: #e9edf1;
+  background: #08101b;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), transparent 26%),
+    linear-gradient(180deg, #08101b 0%, #02060a 100%);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+.app-shell {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-card {
+  padding: 2rem;
+  border-radius: 28px;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  margin-bottom: 2rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #7dd3fc;
+  margin: 0 0 0.75rem;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  line-height: 1.05;
+}
+
+h2 {
+  font-size: 1.55rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  line-height: 1.8;
+  color: #cbd5e1;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1.5rem;
+}
+
+.panel {
+  padding: 1.75rem;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 28px;
+}
+
+.upload-form {
+  display: grid;
+  gap: 1rem;
+}
+
+input[type="file"],
+textarea {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: rgba(255,255,255,0.04);
+  color: #e2e8f0;
+  padding: 1rem;
+}
+
+button {
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #38bdf8, #818cf8);
+  color: #020617;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.result-card,
+.chat-answer {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 20px;
+  background: rgba(10, 16, 24, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+.document-label {
+  margin: 0 0 1rem;
+  color: #a5b4fc;
+}
+
+.cards-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.small-card {
+  padding: 1rem;
+  border-radius: 20px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+.study-plan {
+  margin-top: 1rem;
+}
+
+.toast {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 16px;
+}
+
+.error {
+  background: rgba(248, 113, 113, 0.16);
+  border: 1px solid rgba(248, 113, 113, 0.2);
+}
+
+@media (max-width: 980px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+  .cards-row {
+    grid-template-columns: 1fr;
+  }
+}

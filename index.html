@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning OS Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="hero-copy">
+        <p class="eyebrow">Learning OS 2.0</p>
+        <h1>Hệ Điều Hành Học Tập Cá Nhân</h1>
+        <p>AI quản lý lộ trình học, tạo quiz, ghi nhớ, và đánh giá năng lực để bạn tiến thẳng tới nghề nghiệp.</p>
+        <div class="hero-actions">
+          <button id="try-demo">Try Demo</button>
+          <a href="#features" class="secondary-button">Xem tính năng</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="dashboard-card">
+          <h2>Learning Score</h2>
+          <p class="score">84</p>
+          <div class="skill-bar">
+            <span>SQL</span>
+            <div class="bar"><div style="width: 91%"></div></div>
+          </div>
+          <div class="skill-bar">
+            <span>Python</span>
+            <div class="bar"><div style="width: 76%"></div></div>
+          </div>
+          <div class="skill-bar">
+            <span>Statistics</span>
+            <div class="bar"><div style="width: 43%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="features" class="section features">
+      <div class="container">
+        <h2>Modules nền tảng</h2>
+        <div class="cards-grid">
+          <article class="feature-card">
+            <h3>AI Skill Graph</h3>
+            <p>Định nghĩa kỹ năng, xác định điểm mạnh và điểm yếu, tự động hoá biểu đồ học tập.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Dynamic Learning Path</h3>
+            <p>Lộ trình hàng ngày cá nhân hoá với tasks, quiz và mini challenge.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Auto Notes Generator</h3>
+            <p>Tạo summary, flashcards, quiz và cheat sheet từ tài liệu chỉ trong vài giây.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Memory Engine</h3>
+            <p>Áp dụng spaced repetition để nhắc ôn đúng lúc và giữ kiến thức lâu dài.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Assignment Copilot</h3>
+            <p>Phân tích yêu cầu bài tập, tách task, tạo checklist và gợi ý cấu trúc trả lời.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Career Coach</h3>
+            <p>Đánh giá readiness nghề nghiệp với missing skill và hướng dẫn xây dựng portfolio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="section demo-section">
+      <div class="container demo-grid">
+        <div class="demo-panel">
+          <h2>Smart LMS Copilot</h2>
+          <p>Tải lên lecture PDF hoặc assignment, AI tạo summary, quiz, flashcards và study plan.</p>
+          <form id="upload-form">
+            <label for="mock-file">Chọn lecture file (demo)</label>
+            <input type="file" id="mock-file" accept=".pdf,.txt" />
+            <button type="submit">Xử lý tài liệu</button>
+          </form>
+          <div id="demo-output" class="demo-output hidden">
+            <h3>Kết quả demo</h3>
+            <div class="output-block">
+              <h4>Summary</h4>
+              <p>Gradient descent là thuật toán tối ưu dùng để tìm giá trị tham số tốt nhất bằng cách giảm dần sai số.</p>
+            </div>
+            <div class="output-block">
+              <h4>Quiz</h4>
+              <ol>
+                <li>Gradient descent được dùng để làm gì?</li>
+                <li>Nếu learning rate quá lớn thì chuyện gì xảy ra?</li>
+              </ol>
+            </div>
+            <div class="output-block">
+              <h4>Flashcards</h4>
+              <ul>
+                <li>Gradient descent: tối ưu hoá bằng đạo hàm.</li>
+                <li>Learning rate: tốc độ cập nhật tham số.</li>
+              </ul>
+            </div>
+            <div class="output-block">
+              <h4>Study Plan</h4>
+              <p>Hôm nay: 20 phút ôn gradient descent, 10 câu quiz, 5 phút flashcards.</p>
+            </div>
+          </div>
+        </div>
+        <aside class="mock-dashboard">
+          <div class="card">
+            <h3>Forgetting Prediction</h3>
+            <p>Khả năng quên <strong>SQL Join</strong>: <strong>78%</strong></p>
+            <p>Cần ôn lại hôm nay.</p>
+          </div>
+          <div class="card">
+            <h3>Career Readiness</h3>
+            <p>Data Analyst readiness: <strong>67%</strong></p>
+            <ul>
+              <li>Missing: Power BI</li>
+              <li>Missing: Statistics</li>
+              <li>Missing: Dashboard Portfolio</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section roadmap">
+      <div class="container">
+        <h2>Thin slice MVP</h2>
+        <p>Landing page + upload PDF + AI Summary + Quiz Generator + Chat with document.</p>
+        <div class="roadmap-grid">
+          <div class="roadmap-step">
+            <h4>1</h4>
+            <p>Upload tài liệu lecture / assignment.</p>
+          </div>
+          <div class="roadmap-step">
+            <h4>2</h4>
+            <p>Chiết xuất nội dung và tạo knowledge graph.</p>
+          </div>
+          <div class="roadmap-step">
+            <h4>3</h4>
+            <p>Sinh summary, quiz và study plan cá nhân.</p>
+          </div>
+          <div class="roadmap-step">
+            <h4>4</h4>
+            <p>Hiển thị kết quả demo và metrics nghề nghiệp.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Learning OS Demo • Demo tĩnh cho ý tưởng hackathon.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
